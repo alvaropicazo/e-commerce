@@ -10,7 +10,7 @@ public class OrderResponse {
     private String status;
 
     // Constructor, Getters
-    public OrderResponse(UUID id, String userId, String productId, int quantity, String status) {
+    public OrderResponse(UUID id, UUID userId, UUID productId, int quantity, String status) {
         this.id = id;
         this.userId = userId;
         this.productId = productId;

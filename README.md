@@ -22,6 +22,10 @@ Why it's important:
 
 - 🔐 Obfuscates your internal DB structure better than incremental IDs
 
-
-
-@Data could have been used as it generates getters/setters automatically.
+### Use Makefile for the following tasks
+make           # Build all services
+make clean     # Clean all
+make test      # Run tests
+make build-docker      # Build docker images
+make run      # Docker-compose up
+make down      # Docker-compose down

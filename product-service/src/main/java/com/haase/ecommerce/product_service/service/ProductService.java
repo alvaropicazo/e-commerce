@@ -53,4 +53,13 @@ public class ProductService {
         ))
         .collect(Collectors.toList());
     }
+
+    public void reduceStock(UUID productId, int quantity) {
+        Product product = repository.findById(productId)
+            .orElseThrow(() -> new RuntimeException("Product not found"));
+
+        product.setStock(product.getStock() - quantity);
+
+        repository.save(product);
+    }
 }

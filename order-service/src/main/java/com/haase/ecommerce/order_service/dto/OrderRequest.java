@@ -2,26 +2,27 @@ package com.haase.ecommerce.order_service.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
+import java.util.UUID;
 
 public class OrderRequest {
     @NotBlank
-    private String userId;
+    private UUID userId;
 
     @NotBlank
-    private String productId;
+    private UUID productId;
 
     @Positive
     private int quantity;
 
     // Getters and Setters
-    public String getUserId() {
+    public UUID getUserId() {
         return userId;
     }
     public void setUserId(String userId) {
         this.userId = userId;
     }
     
-    public String getProductId() {
+    public UUID getProductId() {
         return productId;
     }
     public void setProductId(String productId) {

@@ -14,10 +14,10 @@ public class Order {
     private UUID id;
 
     @Column(name = "user_id")
-    private String userId;
+    private UUID userId;
 
     @Column(name = "product_id")
-    private String productId;
+    private UUID productId;
 
     @Column(name = "quantity")
     private int quantity;
@@ -46,7 +46,7 @@ public class Order {
         return id;
     }
 
-    public String getProductId() {
+    public UUID getProductId() {
         return productId;
     }
 
@@ -58,7 +58,7 @@ public class Order {
         return status;
     }
 
-    public String getUserId() {
+    public UUID getUserId() {
         return userId;
     }
 }
