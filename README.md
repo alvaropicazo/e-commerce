@@ -29,3 +29,5 @@ make test      # Run tests
 make build-docker      # Build docker images
 make run      # Docker-compose up
 make down      # Docker-compose down
+
+`mvn spring-boot:run` to run a single service locally

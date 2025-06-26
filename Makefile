@@ -1,6 +1,6 @@
 MVN = mvn
-SERVICES = common order-service product-service
-SERVICES_DOCKER = order-service product-service
+SERVICES = common order-service product-service user-service
+SERVICES_DOCKER = order-service product-service user-service
 
 .PHONY: all clean package test run build-docker
 
